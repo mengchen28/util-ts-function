@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no, user-scalable=no"
+        />
+        <title><%= htmlWebpackPlugin.options.title %></title>
+    </head>
+    <body>
+        <script src="../dist/index.js"></script>
+        <script>
+            console.log('umd方式打印:add方法',window.index.add(1,2))
+        </script>
+        
+        <div id="root"></div>
+    </body>
+</html>
